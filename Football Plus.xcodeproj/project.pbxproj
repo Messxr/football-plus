@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3885773A263B04600095901D /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857715263B04600095901D /* CacheManager.swift */; };
+		3885773B263B04600095901D /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857716263B04600095901D /* DeviceModel.swift */; };
+		3885773C263B04600095901D /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857717263B04600095901D /* JSONManager.swift */; };
+		3885773D263B04600095901D /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857718263B04600095901D /* JSONData.swift */; };
+		3885773E263B04600095901D /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = 38857719263B04600095901D /* players.json */; };
+		3885773F263B04600095901D /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 3885771A263B04600095901D /* articles.json */; };
+		38857740263B04600095901D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3885771C263B04600095901D /* Assets.xcassets */; };
+		38857741263B04600095901D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885771D263B04600095901D /* AppDelegate.swift */; };
+		38857742263B04600095901D /* Scada-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3885771F263B04600095901D /* Scada-Regular.ttf */; };
+		38857743263B04600095901D /* Scada-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38857720263B04600095901D /* Scada-Italic.ttf */; };
+		38857744263B04600095901D /* Scada-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38857721263B04600095901D /* Scada-BoldItalic.ttf */; };
+		38857745263B04600095901D /* Scada-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38857722263B04600095901D /* Scada-Bold.ttf */; };
+		38857746263B04600095901D /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857724263B04600095901D /* ArticlesTableViewCell.swift */; };
+		38857747263B04600095901D /* MiddleScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857725263B04600095901D /* MiddleScheduleCell.swift */; };
+		38857748263B04600095901D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857726263B04600095901D /* CollectionViewCell.swift */; };
+		38857749263B04600095901D /* HeaderTeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857727263B04600095901D /* HeaderTeamCell.swift */; };
+		3885774A263B04600095901D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38857728263B04600095901D /* LaunchScreen.storyboard */; };
+		3885774B263B04600095901D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3885772A263B04600095901D /* Main.storyboard */; };
+		3885774C263B04600095901D /* TopScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885772C263B04600095901D /* TopScheduleCell.swift */; };
+		3885774D263B04600095901D /* AboutTeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3885772D263B04600095901D /* AboutTeamCell.swift */; };
+		3885774F263B04600095901D /* SideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857730263B04600095901D /* SideInTransition.swift */; };
+		38857750263B04600095901D /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857731263B04600095901D /* PlayersViewController.swift */; };
+		38857751263B04600095901D /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857732263B04600095901D /* TeamsViewController.swift */; };
+		38857752263B04600095901D /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857733263B04600095901D /* ArticlesViewController.swift */; };
+		38857753263B04600095901D /* PlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857734263B04600095901D /* PlayerInfoViewController.swift */; };
+		38857754263B04600095901D /* ArticleInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857735263B04600095901D /* ArticleInfoViewController.swift */; };
+		38857755263B04600095901D /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857736263B04600095901D /* TeamInfoViewController.swift */; };
+		38857756263B04600095901D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857737263B04600095901D /* MenuViewController.swift */; };
+		38857757263B04600095901D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38857738263B04600095901D /* SettingsViewController.swift */; };
+		38857758263B04600095901D /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 38857739263B04600095901D /* teams.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		388576FB263B040C0095901D /* Football Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3885770C263B040E0095901D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38857715263B04600095901D /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		38857716263B04600095901D /* DeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		38857717263B04600095901D /* JSONManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		38857718263B04600095901D /* JSONData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
+		38857719263B04600095901D /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
+		3885771A263B04600095901D /* articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
+		3885771C263B04600095901D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3885771D263B04600095901D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3885771F263B04600095901D /* Scada-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scada-Regular.ttf"; sourceTree = "<group>"; };
+		38857720263B04600095901D /* Scada-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scada-Italic.ttf"; sourceTree = "<group>"; };
+		38857721263B04600095901D /* Scada-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scada-BoldItalic.ttf"; sourceTree = "<group>"; };
+		38857722263B04600095901D /* Scada-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scada-Bold.ttf"; sourceTree = "<group>"; };
+		38857724263B04600095901D /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
+		38857725263B04600095901D /* MiddleScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleScheduleCell.swift; sourceTree = "<group>"; };
+		38857726263B04600095901D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		38857727263B04600095901D /* HeaderTeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTeamCell.swift; sourceTree = "<group>"; };
+		38857729263B04600095901D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3885772B263B04600095901D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3885772C263B04600095901D /* TopScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScheduleCell.swift; sourceTree = "<group>"; };
+		3885772D263B04600095901D /* AboutTeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTeamCell.swift; sourceTree = "<group>"; };
+		38857730263B04600095901D /* SideInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideInTransition.swift; sourceTree = "<group>"; };
+		38857731263B04600095901D /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		38857732263B04600095901D /* TeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
+		38857733263B04600095901D /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		38857734263B04600095901D /* PlayerInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInfoViewController.swift; sourceTree = "<group>"; };
+		38857735263B04600095901D /* ArticleInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleInfoViewController.swift; sourceTree = "<group>"; };
+		38857736263B04600095901D /* TeamInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
+		38857737263B04600095901D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		38857738263B04600095901D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		38857739263B04600095901D /* teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		388576F8263B040C0095901D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		385082C02641618E00B18F60 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3885771A263B04600095901D /* articles.json */,
+				38857719263B04600095901D /* players.json */,
+				38857739263B04600095901D /* teams.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		388576F2263B040C0095901D = {
+			isa = PBXGroup;
+			children = (
+				388576FD263B040C0095901D /* Football Plus */,
+				388576FC263B040C0095901D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		388576FC263B040C0095901D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				388576FB263B040C0095901D /* Football Plus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		388576FD263B040C0095901D /* Football Plus */ = {
+			isa = PBXGroup;
+			children = (
+				3885771B263B04600095901D /* Supporting Files */,
+				38857714263B04600095901D /* Models */,
+				38857723263B04600095901D /* Views */,
+				3885772F263B04600095901D /* Controllers */,
+				385082C02641618E00B18F60 /* Data */,
+				3885770C263B040E0095901D /* Info.plist */,
+			);
+			path = "Football Plus";
+			sourceTree = "<group>";
+		};
+		38857714263B04600095901D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38857715263B04600095901D /* CacheManager.swift */,
+				38857716263B04600095901D /* DeviceModel.swift */,
+				38857717263B04600095901D /* JSONManager.swift */,
+				38857718263B04600095901D /* JSONData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3885771B263B04600095901D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3885771D263B04600095901D /* AppDelegate.swift */,
+				3885771C263B04600095901D /* Assets.xcassets */,
+				3885771E263B04600095901D /* Fonts */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3885771E263B04600095901D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3885771F263B04600095901D /* Scada-Regular.ttf */,
+				38857720263B04600095901D /* Scada-Italic.ttf */,
+				38857721263B04600095901D /* Scada-BoldItalic.ttf */,
+				38857722263B04600095901D /* Scada-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		38857723263B04600095901D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38857728263B04600095901D /* LaunchScreen.storyboard */,
+				3885772A263B04600095901D /* Main.storyboard */,
+				38857726263B04600095901D /* CollectionViewCell.swift */,
+				38857727263B04600095901D /* HeaderTeamCell.swift */,
+				3885772C263B04600095901D /* TopScheduleCell.swift */,
+				38857725263B04600095901D /* MiddleScheduleCell.swift */,
+				3885772D263B04600095901D /* AboutTeamCell.swift */,
+				38857724263B04600095901D /* ArticlesTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3885772F263B04600095901D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38857737263B04600095901D /* MenuViewController.swift */,
+				38857730263B04600095901D /* SideInTransition.swift */,
+				38857732263B04600095901D /* TeamsViewController.swift */,
+				38857731263B04600095901D /* PlayersViewController.swift */,
+				38857733263B04600095901D /* ArticlesViewController.swift */,
+				38857736263B04600095901D /* TeamInfoViewController.swift */,
+				38857734263B04600095901D /* PlayerInfoViewController.swift */,
+				38857735263B04600095901D /* ArticleInfoViewController.swift */,
+				38857738263B04600095901D /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		388576FA263B040C0095901D /* Football Plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3885770F263B040E0095901D /* Build configuration list for PBXNativeTarget "Football Plus" */;
+			buildPhases = (
+				388576F7263B040C0095901D /* Sources */,
+				388576F8263B040C0095901D /* Frameworks */,
+				388576F9263B040C0095901D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Football Plus";
+			productName = "Football Plus";
+			productReference = 388576FB263B040C0095901D /* Football Plus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		388576F3263B040C0095901D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					388576FA263B040C0095901D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 388576F6263B040C0095901D /* Build configuration list for PBXProject "Football Plus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 388576F2263B040C0095901D;
+			productRefGroup = 388576FC263B040C0095901D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				388576FA263B040C0095901D /* Football Plus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		388576F9263B040C0095901D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38857742263B04600095901D /* Scada-Regular.ttf in Resources */,
+				3885774A263B04600095901D /* LaunchScreen.storyboard in Resources */,
+				38857743263B04600095901D /* Scada-Italic.ttf in Resources */,
+				38857744263B04600095901D /* Scada-BoldItalic.ttf in Resources */,
+				38857758263B04600095901D /* teams.json in Resources */,
+				3885773F263B04600095901D /* articles.json in Resources */,
+				38857740263B04600095901D /* Assets.xcassets in Resources */,
+				3885774B263B04600095901D /* Main.storyboard in Resources */,
+				38857745263B04600095901D /* Scada-Bold.ttf in Resources */,
+				3885773E263B04600095901D /* players.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		388576F7263B040C0095901D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3885774C263B04600095901D /* TopScheduleCell.swift in Sources */,
+				38857750263B04600095901D /* PlayersViewController.swift in Sources */,
+				38857757263B04600095901D /* SettingsViewController.swift in Sources */,
+				38857749263B04600095901D /* HeaderTeamCell.swift in Sources */,
+				3885773A263B04600095901D /* CacheManager.swift in Sources */,
+				3885774D263B04600095901D /* AboutTeamCell.swift in Sources */,
+				38857754263B04600095901D /* ArticleInfoViewController.swift in Sources */,
+				3885773D263B04600095901D /* JSONData.swift in Sources */,
+				38857748263B04600095901D /* CollectionViewCell.swift in Sources */,
+				38857755263B04600095901D /* TeamInfoViewController.swift in Sources */,
+				3885773C263B04600095901D /* JSONManager.swift in Sources */,
+				38857756263B04600095901D /* MenuViewController.swift in Sources */,
+				38857741263B04600095901D /* AppDelegate.swift in Sources */,
+				38857753263B04600095901D /* PlayerInfoViewController.swift in Sources */,
+				3885774F263B04600095901D /* SideInTransition.swift in Sources */,
+				38857747263B04600095901D /* MiddleScheduleCell.swift in Sources */,
+				38857746263B04600095901D /* ArticlesTableViewCell.swift in Sources */,
+				38857752263B04600095901D /* ArticlesViewController.swift in Sources */,
+				38857751263B04600095901D /* TeamsViewController.swift in Sources */,
+				3885773B263B04600095901D /* DeviceModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38857728263B04600095901D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38857729263B04600095901D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3885772A263B04600095901D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3885772B263B04600095901D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3885770D263B040E0095901D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3885770E263B040E0095901D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38857710263B040E0095901D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9QZP2V4HS;
+				INFOPLIST_FILE = "Football Plus/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Football-Plus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38857711263B040E0095901D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L9QZP2V4HS;
+				INFOPLIST_FILE = "Football Plus/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Football-Plus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		388576F6263B040C0095901D /* Build configuration list for PBXProject "Football Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3885770D263B040E0095901D /* Debug */,
+				3885770E263B040E0095901D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3885770F263B040E0095901D /* Build configuration list for PBXNativeTarget "Football Plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38857710263B040E0095901D /* Debug */,
+				38857711263B040E0095901D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 388576F3263B040C0095901D /* Project object */;
+}
